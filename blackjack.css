@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url(./pictures/360_F_325386410_7XLHgFBmPH10k0GCUXbikWCAeFFC8145.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+#hidden {
+    border-radius: 5px;
+}
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+    margin-right: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+    margin-right: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#credits {
+    font-size: 24px;
+    width: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    /* margin: auto auto auto 80vw;
+    position: fixed; */
+    margin: auto;
+    /* margin-top: 30px; */
+    border: black solid 3px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#creditP {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+#hit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#stay {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#restart {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.don {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    opacity: 0;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.don.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+button {
+    border: black solid 3px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+button:hover {
+    background-color: rgb(180, 172, 182);
+    cursor: pointer;
+}
+
+#tut {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 45%;
+    width: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.game-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 0 10px;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    transition: opacity 0.4s ease;
+}
+
+.game-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.game-modal .content {
+    background: rgba(0,0,0,0.5);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.tutorial {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 0 10px;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    transition: opacity 0.4s ease;
+}
+
+.tutorial.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tutorial .content {
+    background: rgba(0,0,0,0.8);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    padding-bottom: 40px;
+}
+.content #exitTut {
+    display: block;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
