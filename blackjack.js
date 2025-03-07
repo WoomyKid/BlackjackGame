@@ -40,6 +40,7 @@ let winstreak = 0;
 let canHit = true; //allows the player (you) to draw while yourSum <= 21
 
 window.onload = function() {
+    openTutorial();
     buildDeck();
     shuffleDeck();
     document.getElementById("creditNum").innerText = "100";
