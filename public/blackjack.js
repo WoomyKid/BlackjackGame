@@ -90,7 +90,7 @@ function wipeDeck() {
         hiddenCard.id = "hidden";
         document.getElementById("dealer-cards").append(hiddenCard);
     }
-    hiddenCard.src = "./cards/BACK.png"; // Reset hidden card image
+    hiddenCard.src = "/cards/BACK.png"; // Reset hidden card image
 
     dealerSum = 0;
     yourSum = 0;
@@ -134,7 +134,7 @@ function startGame() {
         //<img src="./cards/4-C.png">
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "./cards/" + card + ".png";
+        cardImg.src = "/cards/" + card + ".png";
         dealerSum += getValue(card);
         dealerAceCount += checkAce(card);
         document.getElementById("dealer-cards").append(cardImg);
@@ -144,7 +144,7 @@ function startGame() {
     for (let i = 0; i < 2; i++) {
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "./cards/" + card + ".png";
+        cardImg.src = "/cards/" + card + ".png";
         yourSum += getValue(card);
         yourAceCount += checkAce(card);
         document.getElementById("your-cards").append(cardImg);
@@ -163,7 +163,7 @@ function hit() {
 
     let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "./cards/" + card + ".png";
+    cardImg.src = "/cards/" + card + ".png";
     yourSum += getValue(card);
     yourAceCount += checkAce(card);
     document.getElementById("your-cards").append(cardImg);
@@ -179,7 +179,7 @@ function stay() {
     yourSum = reduceAce(yourSum, yourAceCount);
 
     canHit = false;
-    document.getElementById("hidden").src = "./cards/" + hidden + ".png";
+    document.getElementById("hidden").src = "/cards/" + hidden + ".png";
 
     let message = "";
 

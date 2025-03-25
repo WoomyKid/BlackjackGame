@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background: url(./pictures/360_F_325386410_7XLHgFBmPH10k0GCUXbikWCAeFFC8145.jpg) no-repeat center center fixed; 
+    background: url(/pictures/360_F_325386410_7XLHgFBmPH10k0GCUXbikWCAeFFC8145.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
